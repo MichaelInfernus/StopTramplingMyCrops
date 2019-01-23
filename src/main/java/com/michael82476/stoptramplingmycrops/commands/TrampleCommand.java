@@ -51,6 +51,8 @@ public class TrampleCommand implements CommandExecutor {
                     else {
                         worldsList.add(worldToAdd);
                         plugin.getConfig().set("trample-less-worlds", worldsList);
+                        plugin.saveConfig();
+                        plugin.loadConfig();
                         sender.sendMessage(plugin.prefix + ChatColor.GREEN + "Successfully added '" + worldToAdd + "'!");
                         return true;
                     }
@@ -73,6 +75,8 @@ public class TrampleCommand implements CommandExecutor {
                             }
                         }
                         plugin.getConfig().set("trample-less-worlds", worldsList);
+                        plugin.saveConfig();
+                        plugin.loadConfig();
                         sender.sendMessage(plugin.prefix + ChatColor.GREEN + "Successfully removed '" + worldToRemove + "'!");
                         return true;
                     }
