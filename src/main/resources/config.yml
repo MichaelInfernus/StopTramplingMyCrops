@@ -1,0 +1,4 @@
+stop-trampling-enabled: true
+trample-less-worlds:
+  - BSkyblock_world
+ #- all
