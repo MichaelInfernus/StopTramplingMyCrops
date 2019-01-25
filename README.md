@@ -1,3 +1,4 @@
+#StopTramplingMyCrops
 Plugin for Minecraft servers that adds per-world crop-trampling disabling. 
 
 Commands:
