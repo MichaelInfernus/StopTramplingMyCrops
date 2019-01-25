@@ -40,6 +40,7 @@ public final class StopTramplingMyCrops extends JavaPlugin {
                 this.getDataFolder().mkdirs();
             this.saveDefaultConfig();
             this.reloadConfig();
+            worldsList = this.getConfig().getStringList("trample-less-worlds");
             if(worldsList == null)
                 return false; //something didn't go write. It shouldn't be null
         }

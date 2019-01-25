@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../PlayerPerks/PlayerPerks.iml" filepath="$PROJECT_DIR$/../PlayerPerks/PlayerPerks.iml" />
       <module fileurl="file://$PROJECT_DIR$/StopTramplingMyCrops.iml" filepath="$PROJECT_DIR$/StopTramplingMyCrops.iml" />
     </modules>
   </component>
