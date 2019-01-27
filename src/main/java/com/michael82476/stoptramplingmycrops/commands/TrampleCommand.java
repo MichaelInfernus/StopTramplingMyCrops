@@ -9,6 +9,7 @@ import org.bukkit.entity.Player;
 
 import java.util.List;
 
+@SuppressWarnings("StringConcatenationInLoop")
 public class TrampleCommand implements CommandExecutor {
 
     private StopTramplingMyCrops plugin;
@@ -18,6 +19,8 @@ public class TrampleCommand implements CommandExecutor {
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
+        if(args.length == 0)
+            return true;
         if(args[0].equalsIgnoreCase("reload"))
         {
             if(sender instanceof Player) {
@@ -43,6 +46,10 @@ public class TrampleCommand implements CommandExecutor {
             if(args[0].equalsIgnoreCase("add")) {
                 if(args.length >= 2) {//they put a world to add
                     String worldToAdd = args[1];
+                    if(args.length > 2) {
+                        for(int i = 2; i < args.length; i++)
+                            worldToAdd += " " + args[i];
+                    }
                     List<String> worldsList = plugin.getWorldsList();
                     if(worldsList.contains(worldToAdd)) {
                         sender.sendMessage(plugin.prefix + ChatColor.YELLOW + "World '" + worldToAdd + "' is already added!");
@@ -61,6 +68,10 @@ public class TrampleCommand implements CommandExecutor {
             else if(args[0].equalsIgnoreCase("remove")) {
                 if(args.length >= 2) {//they put a world to add
                     String worldToRemove = args[1];
+                    if(args.length > 2) {
+                        for(int i = 2; i < args.length; i++)
+                            worldToRemove += " " + args[i];
+                    }
                     List<String> worldsList = plugin.getWorldsList();
                     if(!worldsList.contains(worldToRemove)) {
                         sender.sendMessage(plugin.prefix + ChatColor.RED + "World '" + worldToRemove + "' is not added.");
