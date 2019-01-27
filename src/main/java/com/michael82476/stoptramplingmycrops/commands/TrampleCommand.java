@@ -19,8 +19,9 @@ public class TrampleCommand implements CommandExecutor {
     }
 
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
-        if(args.length == 0)
-            return true;
+        if(args.length == 0) {
+            return false;
+        }
         if(args[0].equalsIgnoreCase("reload"))
         {
             if(sender instanceof Player) {

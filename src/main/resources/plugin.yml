@@ -7,4 +7,4 @@ description: Stop players trampling crops in specified worlds
 commands:
   stmc:
     description: Admin command for StopTramplingMyCrops
-    usage: /stmc <arg>
+    usage: /stmc <reload/add/remove>
