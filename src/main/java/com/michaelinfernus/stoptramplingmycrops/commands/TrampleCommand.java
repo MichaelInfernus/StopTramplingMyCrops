@@ -1,6 +1,6 @@
-package com.michael82476.stoptramplingmycrops.commands;
+package com.michaelinfernus.stoptramplingmycrops.commands;
 
-import com.michael82476.stoptramplingmycrops.StopTramplingMyCrops;
+import com.michaelinfernus.stoptramplingmycrops.StopTramplingMyCrops;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

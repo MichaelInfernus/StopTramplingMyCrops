@@ -1,8 +1,8 @@
 name: StopTramplingMyCrops
 version: ${project.version}
-main: com.michael82476.stoptramplingmycrops.StopTramplingMyCrops
+main: com.michaelinfernus.stoptramplingmycrops.StopTramplingMyCrops
 api-version: 1.13
-authors: [Michael82476]
+authors: [MichaelInfernus]
 description: Stop players trampling crops in specified worlds
 commands:
   stmc:

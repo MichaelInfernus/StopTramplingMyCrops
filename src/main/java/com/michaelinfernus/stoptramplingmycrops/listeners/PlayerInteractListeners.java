@@ -1,6 +1,6 @@
-package com.michael82476.stoptramplingmycrops.listeners;
+package com.michaelinfernus.stoptramplingmycrops.listeners;
 
-import com.michael82476.stoptramplingmycrops.StopTramplingMyCrops;
+import com.michaelinfernus.stoptramplingmycrops.StopTramplingMyCrops;
 import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.block.Block;

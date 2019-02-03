@@ -1,3 +1,4 @@
+prefix: '&7[&eStopTramplingMyCrops&7] &f'
 stop-trampling-enabled: true
 trample-less-worlds:
   - worldName
