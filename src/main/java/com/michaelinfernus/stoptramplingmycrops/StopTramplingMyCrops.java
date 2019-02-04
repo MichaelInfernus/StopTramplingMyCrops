@@ -44,7 +44,7 @@ public final class StopTramplingMyCrops extends JavaPlugin {
                     this.getConfig().getString("prefix", "&7[&eStopTramplingMyCrops&7] &f"));
             worldsList = this.getConfig().getStringList("trample-less-worlds");
             if(worldsList == null)
-                return false; //something didn't go write. It shouldn't be null
+                return false; //something didn't go right. It shouldn't be null
         }
         catch(Exception e) {
             this.getServer().getConsoleSender().sendMessage(prefix + ChatColor.RED + "Failed to load config! Does it exist?");
