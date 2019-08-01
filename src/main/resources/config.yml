@@ -1,5 +1,6 @@
 prefix: '&7[&eStopTramplingMyCrops&7] &f'
 stop-trampling-enabled: true
+stop-entity-trample: true
 trample-less-worlds:
   - worldName
  #- all

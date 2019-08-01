@@ -1,6 +1,7 @@
 package com.michaelinfernus.stoptramplingmycrops;
 
 import com.michaelinfernus.stoptramplingmycrops.commands.TrampleCommand;
+import com.michaelinfernus.stoptramplingmycrops.listeners.EntityInteractListeners;
 import com.michaelinfernus.stoptramplingmycrops.listeners.PlayerInteractListeners;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -28,6 +29,7 @@ public final class StopTramplingMyCrops extends JavaPlugin {
 
     private void enableListeners() {
         this.getServer().getPluginManager().registerEvents(new PlayerInteractListeners(this), this);
+        this.getServer().getPluginManager().registerEvents(new EntityInteractListeners(this), this);
     }
 
     private void loadCommands() {
